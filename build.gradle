@@ -1,9 +1,14 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group = 'dev.lolcathost'
 version = '1.0-SNAPSHOT'
+
+application {
+    mainClass.set('dev.lolcathost.Main')
+}
 
 repositories {
     mavenCentral()
